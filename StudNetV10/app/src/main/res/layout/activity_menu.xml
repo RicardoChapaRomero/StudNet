@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07179A"
+    tools:context=".menu">
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="163dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="maps"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/maps" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="157dp"
+        android:layout_height="167dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="mae"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pencils" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="167dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="TransporTec"
+        android:scrollbarThumbHorizontal="@color/colorAccent"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/busm" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="163dp"
+        android:layout_height="174dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cartt" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="165dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="menuComidas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="166dp"
+        android:layout_height="169dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="dire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/persona" />
+
+    <ImageButton
+    android:id="@+id/imageButton12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="27dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="66dp"
+    android:onClick="atras"
+    app:layout_constraintEnd_toStartOf="@+id/textView2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="18dp"
+    android:layout_marginEnd="8dp"
+    android:text="StudNet"
+    android:textColor="#FFFFFF"
+    android:textColorLink="@color/colorAccent"
+    android:textSize="36sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

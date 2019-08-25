@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".menuComidas">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Menus"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="626dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/id_foodbox"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="foodbox"
+                android:src="@drawable/foodbox" />
+
+            <ImageView
+                android:id="@+id/id_senorlatino"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="señor"
+                android:src="@drawable/senorlatino" />
+
+            <ImageView
+                android:id="@+id/id_subway"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:src="@drawable/subway" />
+
+            <ImageView
+                android:id="@+id/id_donatota"
+                android:layout_width="match_parent"
+                android:layout_height="137dp"
+                android:src="@drawable/donatota" />
+
+            <ImageView
+                android:id="@+id/id_supersalads"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/supersalads"/>
+
+            <ImageView
+                android:id="@+id/id_chilaquilestec"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:src="@drawable/chilaquilestec" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="66dp"
+        android:onClick="atras"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
